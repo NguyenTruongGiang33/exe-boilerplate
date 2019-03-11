@@ -19,6 +19,7 @@
 <meta property="og:type" content="">
 <meta property="og:url" content="" />
 <!-- Google Font -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">	
   <!-- include styles.html -->
   <!-- build:css(.) style/vendor.min.css -->
 <link rel="stylesheet" type="text/css" media="screen" href="node_modules/bootstrap/dist/css/bootstrap.css" />
@@ -30,46 +31,228 @@
 <body>
   <div class="wrapper">
     <!-- include header.html -->
-    <header class="header-container">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <p>Header Container</p>
-      </div>
-    </div>
-  </div>
-</header>
+    <header class="header-container" id="b-page-header">
+    <div class="container">
+        <div class="menu_header">
+      	        <div class="logo">
+                    <a href="#"><img src="images/logo.png" class="b-logo"></a>
+                </div>	      
+        <nav class="menu_right">
+            <ul>
+                <li><a href="#">LOG IN</a></li>
+                <li><a href="#">SIGN UP</a></li>
+                <li><a href="#"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </nav>
+    </div>	    
+  </div>	  
+</header>	
 
     <!-- include banner.html -->
     <section class="banner-container">
+  <div class="container-banner">
+      <div class="banner-image"><img src="images/background-banner-top.png"/></div>
+      <div class="page-banner-text-center">
+        <h5>Find your Favorite</h5>
+        <div><h1>RECIPES</h1></div>
+        <div><button>GET STARTED</button></div>
+        <div><p>OR SEND US YOUR OWN RECIPES AND GET REWARDED!</p></div>
+    </div>  
+  </div>
+</section>
+
+   <!-- include features.html -->
+    <section class="features-container">
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
-        <p class="title-block">Banner</p>
-      </div>
+        <div class="col-md-12">
+            <div><img src="images/icon-eat.png"/></div>
+            <h3>GET INSPIRED</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.</p>
+        </div>
+        <div class="col-md-12">
+            <div><img src="images/icon-money.png"/></div>
+            <h3>GET REWARDED</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.</p>
+        </div>
+        <div class="col-md-12">
+            <div><img src="images/icon-chef.png"/></div>
+            <h3>GET SOCIAL</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.</p>
+        </div>
+    
     </div>
   </div>
 </section>
 
-    <main class="main-container">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h4 class="title-block">HTML Boilerplate</h4>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <!-- include footer.html -->
-    <footer class="footer-container">
+      <!-- include introdution.html -->
+    <section class="introdution-container">
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
-        <p>Footer Container</p>
-      </div>
+        <div class="col-md-1">
+            <div><img src="images/iphone5.png"/ ></div>
+            <div><img src="images/background_ip.png"/></div>
+        </div>
+        <div class="col-md-2">
+            <h3 class="title-intro">INTRODUCING THE FUDI APP</h3>
+            <p class="text-p">Morbi eget posuere dolor. Pellentesque cursus aliquet aliquet. Aeneanet  felis sit amet diam mollis ullamcorper. Nullam consequat sem a ante vestibulum tristique.Suspendisse tristique lacus ac mattis porta.</p>
+            <p class="text-p">Vivamus ligula quam, vehicula non lacinia sed, faucibus sit amet libero. In libero dui, eleifend eu nisi id, egestas fringilla odio. In varius quam a massa hendrerit ullamcorper a eu justo. Suspendisse porta mattis convallis.  Aenean tempus ligula ac odio rhoncus, quis aliquam dolor accumsan.</p>
+            <p class="text-p">Suspendisse aliquet felis consectetur libero congue, sed pulvinar diam  malesuada. Duis vehicula a nibh id hendrerit. Donec sit amet ultrices ante, a mattis massa. </p>
+            <div class="logo-ac">
+                <div><img src="images/app-store.png"/></div>
+                <div><img src="images/ch-play.png"/></div>
+            </div>
+
+        </div>
     </div>
   </div>
+</section>
+      
+      <!-- include slide.html -->
+    <section class="slide-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                    <div> <img src="images/slide_slick.png"/></div>
+                    <div class="s-content">
+                        <img src="/images/person.png" class="img-person">
+                        <p class="s-text">
+                            “I am so happy because I found this recipe, and it just made my life easier. Thanks so much for sharing!”
+                        </p>
+                        <p class="s-current">
+                            <span class="s-person" >- Michael Dawson, San Francisco, CA -</span>
+                        </p>
+                    </div>
+            </div>
+         </div>
+     </div>       
+</section>
+      
+      <!-- include cuisines.html -->
+        <section class="cusines-container">
+    <div class="container">
+        <div class="row1">
+            <div class="col-md-12">
+                <h4 class="heading-title text-center">BROWSE BY CUISINES</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="img-eat">
+                <div><img src="images/eat-item-1.png"/></div>
+                <div>
+                    <p class="price">327 Recipes</p>
+                    <h2 class="title">ITALIAN</h2>
+                </div>
+            </div>
+           <div class="img-eat">
+                <div><img src="images/eat-item-2.png"/></div>
+                <div>
+                    <p class="price">856 Recipes</p>
+                    <h2 class="title">INDAN</h2>
+                </div>
+            </div>
+            <div class="img-eat">
+                <div><img src="images/eat-item-1.png"/></div>
+                <div>
+                    <p class="price">27 Recipes</p>
+                    <h2 class="title">FRENCH</h2>
+                </div>
+            </div>
+            <div class="img-eat">
+                <div><img src="images/eat-item-1.png"/></div>
+                <div>
+                    <p class="price">174 Recipes</p>
+                    <h2 class="title">STEAKHOUSE</h2>
+                </div>
+            </div>
+            <div class="img-eat">
+                <div><img src="images/eat-item-1.png"/></div>
+                <div>
+                    <p class="price">731 Recipes</p>
+                    <h2 class="title">SEAFOOD</h2>
+                </div>
+            </div>
+         </div>
+        <div class="row">
+            <div class="img-eat">
+                <div><img src="images/eat-item-1.png"/></div>
+                <div>
+                    <p class="price">327 Recipes</p>
+                    <h2 class="title">SUSHI</h2>
+                </div>
+            </div>
+           <div class="img-eat">
+                <div><img src="images/eat-item-1.png"/></div>
+                <div>
+                    <p class="price">529 Recipes</p>
+                    <h2 class="title">MEXICAN</h2>
+                </div>
+            </div>
+            <div class="img-eat">
+                <div><img src="images/eat-item-1.png"/></div>
+                <div>
+                    <p class="price">145 Recipes</p>
+                    <h2 class="title">CHINESE</h2>
+                </div>
+            </div>
+            <div class="img-eat">
+                <div><img src="images/eat-item-1.png"/></div>
+                <div>
+                    <p class="price">327 Recipes</p>
+                    <h2 class="title">PIZZA</h2>
+                </div>
+            </div>
+            <div class="img-eat">
+                <div><img src="images/eat-item-1.png"/></div>
+                <div>
+                    <p class="price">1427 Recipes</p>
+                    <h2 class="title">AMERICAN</h2>
+                </div>
+            </div>
+         </div>
+     </div>
+</section>
+      
+      <!-- include number.html -->
+    <section class="number-container">
+    <div class="container">
+        <div class="row">
+            <div class="count-number">
+                <h2 class="count-price">23,567</h2>
+                <p class="text">Recipes Avaitable</p>
+            </div>
+            <div class="count-number">
+                <h2 class="count-price">431,729</h2>
+                <p class="text">Active Users</p>
+            </div>
+            <div class="count-number">
+                <h2 class="count-price">892,173</h2>
+                <p class="text">Positive Reviews</p>
+            </div>
+            <div class="count-number">
+                <h2 class="count-price">56,581</h2>
+                <p class="text">Photo and Videos</p>
+            </div>
+            <div class="count-number">
+                <h2 class="count-price">3,182</h2>
+                <p class="text">Spices and Herbs</p>
+            </div>
+        </div>
+    </div>
+</section>
+      
+    <!-- include footer.html -->
+    <footer class="footer-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p> &copy; 2014 Fudi. All rights Reserved.</p>
+            </div>
+            <div class="col-md-12">
+                <p>DESIGN BY:<span style="color:black;">WWW.BEKADES.COMM</span></p>
+            </div>
+        </div>
+    </div>
 </footer>
   </div>
 
