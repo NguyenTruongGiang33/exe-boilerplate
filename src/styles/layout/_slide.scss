@@ -7,10 +7,13 @@
                 width: 100%;
             }
             .rela{
+                .center-image{
+                  
+                }
                 position:absolute;
                 bottom:0;
                 left:25%;
-                transform:translate(-25%,0);
+                transform:translate(-25%);
             }  
             .container_vongtron{
 			display:flex;
@@ -37,6 +40,7 @@
         }
         .smo{
             .s-content{
+                width: 100%;
                 display: none;
                 position:absolute;
                 top:50%;
@@ -50,7 +54,16 @@
                     border-radius:50%;
                     text-align:center;
                     margin:auto;
-                }   
+                    margin-bottom: 20px; 
+                } 
+                .s-text{
+                    @include rem("font-size",17);
+                    @include rem("line-height",36);
+                    font-family: $font-lato;
+                    font-weight: 150;
+                    color: beige;
+
+                }
             }
             .fade {
                 -webkit-animation-name: fade;
