@@ -4,65 +4,65 @@
             position:relative;			
 			top:-8px;
             .img1{
-               
+                width: 100%;
             }
             .rela{
-                .center-image{
-                  
-                }
                 position:absolute;
                 bottom:0;
                 left:25%;
                 transform:translate(-25%);
             }  
             .container_vongtron{
-			display:flex;
-			position:absolute;
-			bottom:10%;
-			left:50%;
-			transform:translate(-50%);
+                @include flexbox;
+                position:absolute;
+                bottom:5%;
+                left:50%;
+                transform:translate(-50%);
             
             .vongtronnho{
                 width:10px;
                 height:10px;
                 border-radius:50%;
-                background-color:white;
+                background-color:darkgrey;
                 margin:0 3px;
                 transition: background-color 0.5s ease;
                 cursor:pointer; 
             }   
             .vongtronnho:hover{
-			         background-color:black;
+                background-color:white;
             }
             .active, .vongtronnho:hover{
-                 background-color: black;
+                background-color: white;
 		    }
         }
         .smo{
             .s-content{
                 width: 100%;
-                display: none;
                 position:absolute;
                 top:50%;
                 left:50%;
                 text-align:center;
                 transform:translate(-50%,-50%);
-                color:white;
+                letter-spacing: 1px;
+                color: lightgrey;
                 .img-icon{
-                    width:100px;
-                    height:100px;
+                    width:118px;
+                    height:118px;
                     border-radius:50%;
-                    text-align:center;
+                    border: 3px solid darkgrey;
                     margin:auto;
-                    margin-bottom: 20px; 
+                    margin-bottom: 10px; 
+                    background-color: #3e3e3e;
+                    background-image: none;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: cover;
                 } 
                 .s-text{
                     @include rem("font-size",17);
                     @include rem("line-height",36);
                     font-family: $font-lato;
                     font-weight: 150;
-                    color: beige;
-
                 }
             }
             .fade {
@@ -79,8 +79,7 @@
             @keyframes fade {
                 from {opacity: .4} 
                 to {opacity: 1}
-            }
-            
+            }  
         }          
     }
    }
