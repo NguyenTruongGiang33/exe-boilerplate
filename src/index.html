@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+    
   <!-- include head.html -->
   <title>HTML Boilerplate</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -20,6 +21,23 @@
 <meta property="og:url" content="" />
 <!-- Google Font -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">	
+
+
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+	<script>
+	jQuery(document).ready(function($) {
+	  $(".counter").counterUp({
+		delay: 30, /* The delay in milliseconds per number count up */
+		time: 3000, /*The total duration of the count up animation */
+		offset: 100, 
+		/*The viewport percentile from which the counter starts (by default it's 100, meaning it's triggered at the very moment the element enters the viewport) */
+	  });
+	});
+	</script>
+
+
   <!-- include styles.html -->
   <!-- build:css(.) style/vendor.min.css -->
 <link rel="stylesheet" type="text/css" media="screen" href="node_modules/bootstrap/dist/css/bootstrap.css" />
@@ -263,23 +281,23 @@
     <div class="container">
         <div class="row">
             <div class="count-number">
-                <h2 class="count-price">23,567</h2>
+                <h2 class="count-price"><span class="counter">23,567</span></h2>
                 <p class="text">Recipes Avaitable</p>
             </div>
             <div class="count-number">
-                <h2 class="count-price">431,729</h2>
+                <h2 class="count-price"><span class="counter">431,729</span></h2>
                 <p class="text">Active Users</p>
             </div>
             <div class="count-number">
-                <h2 class="count-price">892,173</h2>
+                <h2 class="count-price"><span class="counter">892,173</span></h2>
                 <p class="text">Positive Reviews</p>
             </div>
             <div class="count-number">
-                <h2 class="count-price">56,581</h2>
+                <h2 class="count-price"><span class="counter">56,581</span></h2>
                 <p class="text">Photo and Videos</p>
             </div>
             <div class="count-number">
-                <h2 class="count-price">3,182</h2>
+                <h2 class="count-price"><span class="counter">3,182</span></h2>
                 <p class="text">Spices and Herbs</p>
             </div>
         </div>
@@ -305,5 +323,7 @@
 <!-- build:js script/script.min.js -->
 <script type="text/javascript" src="scripts/script.js"></script>
 <!-- endbuild -->
+
+
 </body>
 </html>
