@@ -1,5 +1,7 @@
 .cusines-container{
     .container{
+        max-width: 100%;
+        padding: 0;
         .row1{
             .col-md-12{
                 .heading-title{
@@ -28,6 +30,8 @@
             display:flex;
             flex-wrap:wrap;
             .img-eat{
+                margin: 0;
+                padding: 0;
                 width:20%;
                 overflow:hidden;
                 height:200px;

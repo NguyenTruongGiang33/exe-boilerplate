@@ -6,7 +6,6 @@
             @include justify-content(space-around);
             @include align-items(center);
             text-align: center;
-            margin: 0 100px;
             .count-number{
                 .count-price{
                     @include rem("font-size",36);
