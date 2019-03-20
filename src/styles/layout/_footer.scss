@@ -6,7 +6,7 @@
             background-color: #eae8e8;   
             @include flexbox;
             @include justify-content(space-around);
-            @include align-items(center);
+            @include align-content(center);
             @include rem("font-size",14);
             color: #8b8b8b;
             font-family: $font-lato;
@@ -14,6 +14,12 @@
             border-top: 2px solid $cl-footer;
             .text2{
                 letter-spacing: 3px;
+                position: relative;
+                top: 8px;
+            }
+            .text1{
+                position: relative;
+                top: 8px;
             }
         }
     }
